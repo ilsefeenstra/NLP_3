@@ -1,6 +1,6 @@
 # OpenAI API Quickstart - Python example app
 
-This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
+This is a coffee talk starter generator app. The app is based on the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
 
 ## Setup
 
@@ -44,3 +44,20 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
 You should now be able to access the app at [http://localhost:5000](http://localhost:5000)! 
 
 9. Type in a prompt: this can be any subject. If you don't type a prompt and click an generate, a question with a random subject is created. 
+
+
+## Known errors
+It could be that you get the error:
+OSError: [Errno 98] Address already in use
+
+In this case, instead of running 
+```bash
+flask run
+```
+
+run:
+```bash
+flask run --port <number of choice>
+```
+Choose a new number and try untill it's working
+
