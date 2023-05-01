@@ -44,3 +44,20 @@ This is a coffee talk starter generator app. The app is based on the OpenAI API 
 You should now be able to access the app at [http://localhost:5000](http://localhost:5000)! 
 
 9. Type in a prompt: this can be any subject. If you don't type a prompt and click an generate, a question with a random subject is created. 
+
+
+## Known errors
+It could be that you get the error:
+OSError: [Errno 98] Address already in use
+
+In this case, instead of running 
+```bash
+flask run
+```
+
+run:
+```bash
+flask run --port <number of choice>
+```
+Choose a new number and try untill it's working
+
