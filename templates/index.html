@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Talk Starters</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        color: #4b4b4b;
+      }
+      form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      input, button {
+        font-size: 14px;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+      }
+      button {
+        background-color: #4b4b4b;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #3a3a3a;
+      }
+      p {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      img {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/static/coffee_cup.png" alt="Coffee cup">
+    <h1>Coffee Talk Starters</h1>
+    <form method="POST">
+      <label for="subject">Subject (leave blank for a random subject):</label>
+      <input type="text" id="subject" name="subject" placeholder="Enter a subject">
+      <button type="submit">Generate</button>
+    </form>
+    {% if result %}
+      <p><strong>Generated coffee talk starter question:</strong> {{ result }}</p>
+    {% endif %}
+  </body>
+</html>
+
