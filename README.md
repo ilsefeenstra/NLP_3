@@ -1,6 +1,6 @@
-# OpenAI API Quickstart - Python example app
+# NLP Assignment 3 - Coffee Talk Starters Generator
 
-This is a coffee talk starter generator app. The app is based on the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
+This is a Coffee Talk Starters Generator app. The app is based on the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
 
 ## Setup
 
@@ -27,13 +27,7 @@ This is a coffee talk starter generator app. The app is based on the OpenAI API 
    $ pip install -r requirements.txt
    ```
 
-6. Make a copy of the example environment variables file:
-
-   ```bash
-   $ cp .env.example .env
-   ```
-
-7. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file.
+6. Add your [API key](https://beta.openai.com/account/api-keys) in app.py file.
 
 8. Run the app:
 
