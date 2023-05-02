@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Apply your OpenAI API key here
-openai.api_key = ("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")
+openai.api_key = ("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")
 app = Flask(__name__)
 
 def generate_coffee_talk_starters(prompt):
@@ -55,9 +55,11 @@ def generate_random_subject():
 
     return random.choice(subjects)
 
-# Define the route for the main page, handling both GET and POST requests
 @app.route("/", methods=("GET", "POST"))
 def index():
+    """
+    This function defines the route for the main page, handling both GET and POST requests
+    """
     try:
         # If the request is a POST request, generate a question based on the input subject
         if request.method == "POST":
@@ -78,4 +80,5 @@ def index():
 
 # Start the Flask app
 if __name__ == "__main__":
+    # Adjust the port based on availability
     app.run(debug=True, port=8000)
