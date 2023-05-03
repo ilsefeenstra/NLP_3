@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Apply your OpenAI API key here
-openai.api_key = ("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")
+openai.api_key = ("")
 app = Flask(__name__)
 
 def generate_coffee_talk_starters(prompt):
